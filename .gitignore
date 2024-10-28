@@ -1,3 +1,5 @@
 venv/
 .venv
 static/doc
+images
+
