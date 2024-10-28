@@ -1,18 +1,6 @@
-import os
-import glob
-import random
-import itertools
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import torch.nn as nn
 import torch
-import torchvision
-import torch.optim as optim
 from torchvision import transforms, models
-from torch.utils.data import Dataset, DataLoader
 from PIL import Image
-from tqdm import tqdm
 import pickle
 def catordog(img:Image):
     test_transform = transforms.Compose([
