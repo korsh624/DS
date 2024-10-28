@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands='start')
 async def echo(message: types.Message):
-   await message.answer(message.from_user.id)
+   await message.answer('Привет! Я бот с ИИ умеющий отличать кошек от собак. Скинь фотку, что бы в этом убедиться')
 
 
 @dp.message_handler(content_types=["photo"])
