@@ -14,7 +14,7 @@ async def echo(message: types.Message):
 
 @dp.message_handler(content_types=["photo"])
 async def get_photo(message):
-    filname=str(randint(1,100))+'.jpg'
+    filname='images/'+str(randint(1,100))+'.jpg'
     await message.photo[-1].download(destination_file=filname)
     img = Image.open(filname)
     answer=catordog(img)
