@@ -17,6 +17,6 @@ def catordog(img:Image):
         res=torch.argmax(output).item() 
         # print(res)
         if res==1:
-            return "dog"
+            return "Собака"
         else:
-            return "cat"
+            return "Кошка"
